@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador/Decodificador - Challenge</title>
+    <link rel="icon" href="/imagens/Logo Alura.png" type="logo-alura">
+    <!-- Icone que aparece na guia da págian, no caso o logo da alura -->
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+
+    <script src="js/codificador.js" defer></script>
+    <!-- Link com arquivo javascript, utlizando "defer" para que o navegador carregue o html e depois os arquivos .js -->
+
+</head>
+
+<body>
+
+    <header>
+
+        <!-- Icone da Alura com link para página de cursos alura -->
+        <a id="logo-alura" href="https://www.alura.com.br/" target="_blank" rel="noopener noreferrer">
+            <img src="/imagens/Logo Alura.png" alt="Logo da Alura">
+        </a>
+
+        <h1 id="titulo">Codificador / Decodificador</h1>
+
+    </header>
+
+    <main>
+
+        <!-- Criando uma section para o campo onde o usuário irá interagir -->
+        <section id="campo-inserir">
+            <textarea name="mensagem" id="inserir-textarea" placeholder="Digite o texto aqui"></textarea>
+
+            <p id="ponto-esclamacao">
+                <img src="/imagens/exclamacao.png" alt="ponto de exclamação">
+                Apenas letras minúsculas sem acentos.
+            </p>
+
+            <!-- Criando uma div para alinhar or botões mais facilmente no campo -->
+            <div class="botoes">
+                <button id="btn-codificar">Codificar</button>
+                <button id="btn-descodificar">Decodificar</button>
+            </div>
+        </section>
+
+        <!-- Criando uma section para o campo onde a mensagem criptografada/descriptografada aparecerá -->
+        <section id="campo-resposta">
+
+            <img class="img-boneco" src="/imagens/boneco.png" alt="Desenho procurando texto com uma lupa">
+
+            <textarea name="resposta" id="resposta-textarea" placeholder="Nenhuma para ser exibida."
+                disabled></textarea>
+                <!-- Textarea desativada, para evitar edição da mensagem criptografada -->
+
+            <button id="btn-copiar" disabled>Copiar texto</button>
+            <!-- Botão só será ativado depois de codificar/descodificar a mensagem -->
+
+        </section>
+
+    </main>
+
+    <footer>
+        <section id="meus-creditos">
+            <p>Desenvolvido por Richelle Helena&reg;</p>
+        </section>
+
+        <section id="minhas-redes">
+
+            <p>Minhas redes sociais:</p>
+
+            <!-- Div´s para os icones das minhas redes sociais -->
+            <div id="icones-redes-sociais">
+
+                <!-- Icone do GitHub com link para o meu perfil -->
+                <a id="icone-github" href="https://github.com/richelle-2" target="_blank"
+                    rel="noopener noreferrer">
+                    <img class="GitHub" src="/imagens/Logo Github.png" alt="logo do GitHub">
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>
